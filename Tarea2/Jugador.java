@@ -3,13 +3,16 @@ import java.util.Scanner;
 //clase
 public class Jugador {
     String nombre;
+    String apellido;
     String posicion;
     int edad;
     int numeroCamiseta;
 
+
     //metodo accion
     public void mostrarInformacion() {
         System.out.println("Nombre: " + nombre);
+        System.out.println("Apellido: " + apellido);
         System.out.println("Posición: " + posicion);
         System.out.println("Edad: " + edad);
         System.out.println("Número de camiseta: " + numeroCamiseta);
@@ -22,7 +25,8 @@ public class Jugador {
         //OBJETOS
         //Jugador 1
         Jugador jugador1 = new Jugador();
-        jugador1.nombre = "Lionel Messi";
+        jugador1.nombre = "Lionel ";
+        jugador1.apellido= "Messi";
         jugador1.posicion = "Delantero";
         jugador1.edad = 36;
         jugador1.numeroCamiseta = 10;
@@ -39,6 +43,8 @@ public class Jugador {
         System.out.println("Ingrese los datos del tercer jugador:");
         System.out.print("Nombre: ");
         jugador3.nombre = sc.nextLine();
+        System.out.print("Apellido: ");
+        jugador3.apellido = sc.nextLine();
         System.out.print("Posición: ");
         jugador3.posicion = sc.nextLine();
         System.out.print("Edad: ");
